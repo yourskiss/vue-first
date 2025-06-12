@@ -1,0 +1,1 @@
+import{_ as e,a as o,b as s,o as a}from"./index-DIEM_Stt.js";const c={},n={class:"contact"};function r(_,t){return a(),o("div",n,t[0]||(t[0]=[s("h1",null,"This is an contact page",-1)]))}const l=e(c,[["render",r]]);export{l as default};

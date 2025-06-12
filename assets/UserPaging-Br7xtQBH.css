@@ -1,0 +1,1 @@
+.userlist{display:flex;justify-content:center;align-items:flex-start;flex-wrap:wrap;gap:15px}.userlist dd{border:solid 1px #999;padding:10px}.userlist dd img{width:190px;height:auto}.pagination{margin-top:20px}button{margin:0 5px}

@@ -1,0 +1,1 @@
+import{d as o,a as s,i as n,o as a}from"./index-DIEM_Stt.js";const r={key:0,class:"spinner"},i=o({__name:"LoadingBar",props:{status:{type:Boolean}},setup(e){const t=e;return(c,p)=>t.status?(a(),s("section",r)):n("",!0)}});export{i as _};
