@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import WelcomeItem from '@/components/CounterAction1.vue'
+import WelcomeItem from '@/components/home/CounterAction1.vue'
 
 describe('WelcomeItem', () => {
   it('renders properly', () => {

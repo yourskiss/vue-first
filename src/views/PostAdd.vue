@@ -3,7 +3,7 @@ import { useForm, Field, ErrorMessage } from 'vee-validate';
 import * as yup from 'yup';
 import { RouterLink } from 'vue-router';
 import usePosts from '@/services/usePosts';
-import LoadingBar from '@/utils/LoadingBar.vue';
+import LoadingBar from '@/components/LoadingBar.vue';
 
 const { isLoad, resultPost, resultError, addSinglePost } = usePosts();
 

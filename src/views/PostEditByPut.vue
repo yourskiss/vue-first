@@ -5,7 +5,7 @@ import * as yup from 'yup';
 import { RouterLink } from 'vue-router';
 import { useRoute } from "vue-router";
 import usePosts from "@/services/usePosts";
-import LoadingBar from '@/utils/LoadingBar.vue'
+import LoadingBar from '@/components/LoadingBar.vue'
 
 const {isLoad, resultPost, resultData, resultError, getSinglePost, updatePostByPut } = usePosts();
 const {params} = useRoute();

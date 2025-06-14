@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
-import LoadingBar from '@/utils/LoadingBar.vue'
+import LoadingBar from '@/components/LoadingBar.vue'
 
 import useUsers from "@/services/useUsers";
 const { isLoad, resultUser, resultError, getUsers  } = useUsers();

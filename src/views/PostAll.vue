@@ -2,7 +2,7 @@
 import { onMounted } from 'vue'
 import { RouterLink } from 'vue-router';
 import usePosts from "@/services/usePosts";
-import LoadingBar from '@/utils/LoadingBar.vue'
+import LoadingBar from '@/components/LoadingBar.vue'
 
 const {isLoad, resultList, resultError, getAllPosts, deleteSinglePost } = usePosts();
 
@@ -19,7 +19,7 @@ const deletepost = async(id:number) => {
 <template>
   <h1>
     All Posts
-    <RouterLink to="/add-post" class="rightfloat">Add New Post</RouterLink>
+    <RouterLink to="/addpost" class="rightfloat">Add New Post</RouterLink>
   </h1>
 
   <LoadingBar :status="isLoad" />
@@ -31,11 +31,12 @@ const deletepost = async(id:number) => {
     <li v-for="itm in resultList" :key="itm.id">
       <b> {{ itm.title}}</b>
       <br />
-      <RouterLink :to="{name:'single-post',params:{id:itm.id}}">View</RouterLink>
+
+      <RouterLink :to="`/viewpost/${itm.id}`" >View</RouterLink>
         ||
-      <RouterLink :to="{name:'edit-post-by-put',params:{id:itm.id}}">Edit by put</RouterLink>
+      <RouterLink :to="`/edit-by-put/${itm.id}`">Edit by put</RouterLink>
          ||
-      <RouterLink :to="{name:'edit-post-by-patch',params:{id:itm.id}}">Edit by patch</RouterLink>
+      <RouterLink :to="`/edit-by-patch/${itm.id}`">Edit by patch</RouterLink>
          ||
       <span @click="deletepost(itm.id)">Delete</span>
     </li>

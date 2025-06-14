@@ -20,28 +20,28 @@ const router = createRouter({
       component: () => import('@/views/ContactView.vue'),
     },
     {
-      path: '/add-post',
-      name: 'add-post',
+      path: '/addpost',
+      name: 'addpost',
       component: () => import('@/views/PostAdd.vue'),
     },
     {
       path: '/posts',
-      name: 'all-posts',
+      name: 'allposts',
       component: () => import('@/views/PostAll.vue'),
     },
     {
-      path: '/single-post/:id',
-      name: 'single-post',
+      path: '/viewpost/:id',
+      name: 'viewpost',
       component: () => import('@/views/PostSingle.vue'),
     },
     {
-      path: '/edit-post-by-put/:id',
-      name: 'edit-post-by-put',
+      path: '/edit-by-put/:id',
+      name: 'editpostbyput',
       component: () => import('@/views/PostEditByPut.vue'),
     },
     {
-      path: '/edit-post-by-patch/:id',
-      name: 'edit-post-by-patch',
+      path: '/edit-by-patch/:id',
+      name: 'editbypatch',
       component: () => import('@/views/PostEditByPatch.vue'),
     },
     {

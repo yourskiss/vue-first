@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import HelloWorld from '@/components/CounterValue1.vue'
+import HelloWorld from '@/components/home/CounterValue1.vue'
 
 describe('HelloWorld', () => {
   it('renders properly', () => {

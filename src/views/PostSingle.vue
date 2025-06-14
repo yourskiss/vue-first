@@ -3,7 +3,7 @@ import { onMounted, ref } from 'vue';
 import { RouterLink } from 'vue-router';
 import { useRoute } from "vue-router";
 import usePosts from "@/services/usePosts";
-import LoadingBar from '@/utils/LoadingBar.vue'
+import LoadingBar from '@/components/LoadingBar.vue'
 
 const { isLoad, resultData, resultError, getSinglePost } = usePosts();
 const {params} = useRoute();
